@@ -1,6 +1,6 @@
 RegisterNetEvent('syncpos:clientspawn')
 AddEventHandler('syncpos:spawn', function(x, y, z)
-    SetEntityCoords(GetPlayerPed(-1), x, y, z, 1, 0, 0, 1)
+    SetEntityCoords(PlayerPedId(), x, y, z, 1, 0, 0, 1)
 end)
 
 RegisterNetEvent('playerSpawned')
